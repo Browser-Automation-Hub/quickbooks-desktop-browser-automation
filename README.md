@@ -21,7 +21,7 @@ This system requires **MFA** (Intuit MFA / SMS / TOTP). The OSS version provides
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/quickbooks-desktop-browser-automation.git
+git clone https://github.com/Browser-Automation-Hub/quickbooks-desktop-browser-automation.git
 cd quickbooks-desktop-browser-automation
 npm install
 cp .env.example .env
