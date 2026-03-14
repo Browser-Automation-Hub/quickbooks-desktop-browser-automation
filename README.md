@@ -253,6 +253,39 @@ await withAnchorBrowser(async (page) => {
 
 ---
 
+## Known Selectors Reference
+
+> These CSS selectors were observed in QuickBooks Desktop web interfaces. Enterprise applications update their UIs — verify against your specific instance and submit PRs when selectors break.
+
+| Element | Selector | Notes |
+|---------|----------|-------|
+| Login: username | `#ius-userid` | Login form |
+| Login: password | `#ius-password` | Login form |
+| Login: submit | `#ius-sign-in-submit-btn` | Login form |
+| Login: mfa code | `#ius-mfa-confirm-code` | Login form |
+| create invoice: new invoice btn | `a[href*="invoice/new"]` | |
+| create invoice: customer field | `#customer` | |
+| create invoice: product row | `.product-service-col input` | |
+| create invoice: amount field | `.amount-col input` | |
+| create invoice: save btn | `#save-invoice` | |
+| record payment: payments nav | `a[href*="receive-payment"]` | |
+| record payment: customer dropdown | `#payment-customer` | |
+| record payment: amount field | `#payment-amount` | |
+| record payment: invoice checkbox | `.invoice-checkbox` | |
+| record payment: save btn | `#save-payment` | |
+| run profit loss: reports nav | `a[href*="reports"]` | |
+| run profit loss: pl report | `a[href*="profit-and-loss"]` | |
+| run profit loss: date range | `#date-range` | |
+| run profit loss: run btn | `.run-report-btn` | |
+| run profit loss: export x l s x | `.export-xlsx` | |
+| export transactions: transactions nav | `a[href*="transactions"]` | |
+| export transactions: date filter | `.date-filter` | |
+| export transactions: export btn | `.export-transactions` | |
+
+> ⚠️ Selectors are best-effort. Run `node src/utils.js --verify-selectors` to test against your instance.
+
+---
+
 ## More Browser Automation Projects
 
 This is part of the **[Browser Automation Hub](https://github.com/Browser-Automation-Hub)** — a collection of open-source browser automation scaffolds for systems with poor or no API support:
