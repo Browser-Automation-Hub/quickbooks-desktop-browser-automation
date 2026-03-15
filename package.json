@@ -1,7 +1,7 @@
 {
-  "name": "quickbooks-desktop-browser-automation",
+  "name": "@browser-automation-hub/quickbooks-desktop-browser-automation",
   "version": "1.0.0",
-  "description": "Browser automation for QuickBooks Desktop Online/Enterprise — automate invoice creation, payment processing, report extraction, and accounting workflows without the QuickBooks SDK.",
+  "description": "Browser automation for QuickBooks Desktop — automate invoices, payments, and accounting workflows",
   "main": "src/actions.js",
   "scripts": {
     "start": "node examples/basic-login.js",
@@ -16,7 +16,7 @@
     "browser-automation",
     "puppeteer",
     "playwright",
-    "anchorbrowser",
+    "anchor-browser",
     "nodejs"
   ],
   "license": "MIT",
@@ -35,5 +35,8 @@
   "homepage": "https://github.com/Browser-Automation-Hub/quickbooks-desktop-browser-automation#readme",
   "bugs": {
     "url": "https://github.com/Browser-Automation-Hub/quickbooks-desktop-browser-automation/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
